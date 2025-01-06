@@ -1,0 +1,120 @@
+.productdisplay {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.productdisplay-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productdisplay-img-list img {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.productdisplay-main-img {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.productdisplay-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.productdisplay-right-stars img {
+  width: 25px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.productdisplay-right-stars img:hover {
+  transform: scale(1.2);
+}
+
+.clickable-star {
+  cursor: pointer;
+}
+
+.productdisplay-right-stars p {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.productdisplay-right-prices {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.productdisplay-right-price-old {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.productdisplay-right-price-new {
+  color: green;
+  font-weight: bold;
+}
+
+.productdisplay-right-size div {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.productdisplay-right-size .selected {
+  background-color: #f0c040;
+  color: white;
+}
+
+.add-to-cart,
+.add-to-wishlist {
+    display: inline-block;
+    margin: 8px 0;
+    padding: 4px 8px; 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15px; 
+    width: 120px; 
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.add-to-wishlist {
+    background-color: #ff4081;
+}
+
+.add-to-cart:disabled,
+.add-to-wishlist:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+
+.productdisplay-right-category,
+.productdisplay-right-tags {
+  margin-top: 10px;
+  font-size: 14px;
+}
